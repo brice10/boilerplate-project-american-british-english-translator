@@ -8,7 +8,7 @@ const translateHandler = async () => {
   errorArea.innerText = "";
   translatedArea.innerText = "";
 
-  const data = await fetch("/api/translate", {
+  const data = await fetch("api/translate", {
     method: "POST",
     headers: {
       "Accept": "application/json",
