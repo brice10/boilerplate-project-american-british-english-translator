@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  boilerplate-american-british-english-translator-api:
+    build:
+      context: ../..
+      dockerfile: ./Dockerfile
+      args:
+        - PORT=${PORT}
+        - NODE_ENV=${NODE_ENV}
+    ports:
+      - ${PORT}:${PORT}
+    restart: unless-stopped
